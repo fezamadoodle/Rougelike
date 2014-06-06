@@ -1,7 +1,7 @@
 public class Armor extends InventoryItem{
   //somehow get the floor number
   
-  int floorNumber, floorModifier, fireDefense, poisonDefense, armorDefense;
+  int floorNumber, floorModifier, armorDefense;
   String name;
   
   
@@ -11,8 +11,7 @@ public class Armor extends InventoryItem{
     name = name;
     floorModifier = (int)(Math.random() * floorNumber);
     armorDefense = floorModifier*10;
-    fireDefense = floorModifier*5;
-    poisonDefense = floorModifier*3;
+
   }
   
   public void equip(){
