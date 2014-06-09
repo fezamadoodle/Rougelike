@@ -11,9 +11,5 @@ public class Weapon extends InventoryItem{
     damage = floorModifier * 12;
     
   }
-  
-  public void equip(){
-    int playerDamage = 0;
-    attack += damage;
-  }
+
 }
