@@ -13,11 +13,5 @@ public class Armor extends InventoryItem{
     armorDefense = floorModifier*10;
 
   }
-  
-  public void equip(){
-    
-    //the player has stats that would have their defense/offense levels???? currently setting to 0
-    int defense = 0;
-    defense += armorDefense;
-  }
+
 }
