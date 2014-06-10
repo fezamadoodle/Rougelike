@@ -1,9 +1,10 @@
-public class Container{
+public class CContainer extends CBase{
   final int SIZE = 15;
   final int MAXWEIGHT = 50;
   int currWeight;
   
-  public Container(){
+  public CContainer (Entity o){
+    super(o);
     InventoryItem[] inventory = new InventoryItem[SIZE];
   }
   
@@ -15,16 +16,13 @@ public class Container{
     if((currWeight + z.weight) > MAXWEIGHT){
       System.out.println("TOO HEAVY");
     }
-    else{
+    else 
       for(int x = 0; x < SIZE; x++){
-        if(inventory[x].name == z.name && z.stackable){
-          //add it to that
-        }
-        else if(inventory[x] == null){
-          inventory[x] = z;
-          x=30;
-        }
+      if(inventory[x] == null){
+        inventory[x] = z;
+        x=30;
       }
     }
+    
   }
 }
