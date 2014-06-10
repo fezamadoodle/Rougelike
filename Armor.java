@@ -3,7 +3,7 @@ public class Armor extends InventoryItem{
   
   int floorNumber, floorModifier, armorDefense;
   String name;
-  
+  String type = "Armor";
   
   
   public Armor(int num, String name) {
