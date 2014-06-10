@@ -1,7 +1,7 @@
 public class Weapon extends InventoryItem{
   
   int damage;
-  
+  String type = "Weapon";
   
   public Weapon(int num, String name, int range){
     int floorNumber = num;
@@ -11,5 +11,4 @@ public class Weapon extends InventoryItem{
     damage = floorModifier * 12;
     
   }
-
 }
